@@ -3,36 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yeni Səhifə · Hüquq nədir?</title>
+  <title>Hüquq nədir? · Fon səhifə</title>
   <style>
     :root {
-      --bg: #0b1536;
-      --bg-card: #101b46;
-      --text-main: #f9fafb;
-      --border: #273260;
-      --accent1: #f4c15c;
+      --bg: #02010a;
+      --text-main: #fef3c7;
+      --border-accent: rgba(244, 193, 92, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
       margin: 0;
-      padding: 0;
-      background: var(--bg);
-      font-family: Arial, sans-serif;
-      color: var(--text-main);
       min-height: 100vh;
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
-    /* Logo bölməsi */
+    /* Kitab qapağı – arxa fon */
+    .page-bg-cover {
+      position: fixed;
+      inset: 0;
+      background-image: url("huquq-nedir-cover.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: contain;
+      opacity: 0.25; /* istəsən 0.2–0.4 aralığında oynaya bilərsən */
+      filter: brightness(0.7) contrast(0.85);
+      mix-blend-mode: lighten;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Logo üst hissədə mərkəzdə */
     .logo-container {
       width: 100%;
-      padding-top: 40px;
+      padding-top: 25px;
+      padding-bottom: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      z-index: 1;
     }
 
     .logo-container img {
@@ -42,49 +61,42 @@
       filter: drop-shadow(0 0 14px rgba(244, 193, 92, 0.85));
     }
 
-    /* Kitab qapağı fon elementi */
-    .page-bg-cover {
-  position: fixed;
-  inset: 0;
-  background-image: url("huquq-nedir-cover.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;  
-  opacity: 0.25;   
-  filter: brightness(0.7) contrast(0.85);
-  mix-blend-mode: lighten;
-  pointer-events: none;
-  z-index: 0;
-}
+    /* Məzmun üçün boş card (istəsən içini doldurarsan) */
+    .card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 960px;
+      margin: 10px auto 40px;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border-accent);
+      border-bottom: 1px solid var(--border-accent);
 
-    /* Card — içi boş */
-    .empty-card {
-      width: 80%;
-      max-width: 600px;
-      height: 200px;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0.7;
+      /* şüşə effekti çox zəif – istəsən tam transparan da edə bilərsən */
+      background: rgba(20, 30, 60, 0.12);
+      backdrop-filter: blur(14px);
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 20px 14px;
+      }
     }
   </style>
 </head>
 <body>
 
+  <!-- Arxa fon: kitab qapağı -->
+  <div class="page-bg-cover"></div>
+
+  <!-- Logo -->
   <div class="logo-container">
     <img src="logo.png" alt="Hüquq nədir? Logo" />
   </div>
 
-  <div class="cover-bg" style="background-image: url('huquq-nedir-cover.png'); background-size: cover; background-position: center;">
-    <!-- Kitab qapağı fona əlavə olundu -->
-  </div>
-
-  <div class="empty-card">
-    <!-- İçi boş card -->
+  <!-- Boş card – digər səhifə üçün kontent bura gələcək -->
+  <div class="card">
+    <!-- Buraya yeni səhifənin məzmununu əlavə edə bilərsən -->
   </div>
 
 </body>
