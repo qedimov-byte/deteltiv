@@ -44,17 +44,16 @@
 
     /* Kitab qapağı fon elementi */
     .cover-bg {
-      width: 300px;
-      height: 450px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 2px solid var(--accent1);
-      border-radius: 18px;
-      margin-top: 40px;
-      backdrop-filter: blur(6px);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 0 25px rgba(244, 193, 92, 0.25);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('huquq-nedir-cover.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.75;
+      z-index: -1;
     }
 
     /* Card — içi boş */
@@ -79,7 +78,7 @@
     <img src="logo.png" alt="Hüquq nədir? Logo" />
   </div>
 
-  <div class="cover-bg" style="background-image: url('huquq-nedir-cover.png'); background-size: cover; background-position: center;">
+  <div class="cover-bg" style="background-image: url('kitab-qapagi.png'); background-size: cover; background-position: center;">
     <!-- Kitab qapağı fona əlavə olundu -->
   </div>
 
