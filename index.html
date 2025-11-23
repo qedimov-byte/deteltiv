@@ -179,6 +179,30 @@
         font-size: 1.4rem;
       }
     }
+      /* Davanın tanıtım fotosu */
+    .case-teaser {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .case-teaser img {
+      width: 100%;
+      max-width: 620px;
+      border: 1px solid rgba(244, 193, 92, 0.35);
+      border-radius: 6px;
+      box-shadow: 0 0 25px rgba(244, 193, 92, 0.25);
+      filter: brightness(0.94) contrast(1.05);
+    }
+
+    .case-teaser p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      font-style: italic;
+    }
+
+  
   </style>
 </head>
 <body>
@@ -193,139 +217,143 @@
 
   <!-- Detektiv arxiv kartı -->
   <div class="card">
-    <h1>Detektiv Arxiv · Derya Güneş işi</h1>
-    <p class="lead">
-      Aşağıdakı bölmələrdən birini seçərək sübut sənədlərini aça bilərsən.
-      Hər sənəd kliklədikcə bu qutuda mistik “arxiv görüntüsü” kimi görünəcək.
-    </p>
 
-    <!-- Sübut düymələri – əvvəlcə yalnız başlıqlar -->
-    <div class="evidence-grid">
-      <button class="evidence-btn" data-doc="doc-overview">
-        <span class="index">01</span> Hadisə xülasəsi və qəzet xəbəri
-      </button>
-      <button class="evidence-btn" data-doc="doc-chat">
-        <span class="index">02</span> Mərhumun yazışmaları (Whatsapp)
-      </button>
-      <button class="evidence-btn" data-doc="doc-interview">
-        <span class="index">03</span> Məşhur müğənni ilə reportaj
-      </button>
-      <button class="evidence-btn" data-doc="doc-bank">
-        <span class="index">04</span> Şübhəlilərin bank çıxarışları
-      </button>
-      <button class="evidence-btn" data-doc="doc-calls">
-        <span class="index">05</span> Telefon danışıqları siyahısı
-      </button>
-      <button class="evidence-btn" data-doc="doc-death">
-        <span class="index">06</span> Ölüm haqqında rəsmi sənəd
-      </button>
-      <button class="evidence-btn" data-doc="doc-puzzle">
-        <span class="index">07</span> Söz tapmaca – gizli ipucu
-      </button>
-      <button class="evidence-btn" data-doc="doc-statement-ferit">
-        <span class="index">08</span> Şübhəli ifadəsi – Ferit Akyüz
-      </button>
-      <button class="evidence-btn" data-doc="doc-statement-cenk">
-        <span class="index">09</span> Şübhəli ifadəsi – Cenk Uzun
-      </button>
-      <button class="evidence-btn" data-doc="doc-statement-murat">
-        <span class="index">10</span> Şübhəli ifadəsi – Murat Gezin
-      </button>
-      <button class="evidence-btn" data-doc="doc-statement-melek">
-        <span class="index">11</span> Şübhəli ifadəsi – Melek Şahin
-      </button>
-      <button class="evidence-btn" data-doc="doc-statement-muhammed">
-        <span class="index">12</span> Şübhəli ifadəsi – Muhammed Bilgin
-      </button>
-      <button class="evidence-btn" data-doc="doc-statement-emrah">
-        <span class="index">13</span> Şübhəli ifadəsi – Emrah Bağcılar
-      </button>
-      <button class="evidence-btn" data-doc="doc-statement-demet">
-        <span class="index">14</span> Şübhəli ifadəsi – Demet Güneş
-      </button>
-      <button class="evidence-btn" data-doc="doc-statement-haydar">
-        <span class="index">15</span> Şübhəli ifadəsi – Haydar Kurulmuş
-      </button>
+  <!-- Davanın tanıtım fotosu -->
+  <div class="case-teaser">
+    <img 
+      src="/mnt/data/başlıq.jpg"
+      alt="Ünlü Şarkıcının İkizinin Ölümü – Davanın Tanıtım Sənədi"
+    />
+    <p>
+      Gizli arxiv sənədi · “Ünlü Şarkıcının İkizinin Ölümü” işinin əsas qovluğu
+    </p>
+  </div>
+
+  <h1>Detektiv Arxiv · Derya Güneş işi</h1>
+  <p class="lead">
+    Aşağıdakı bölmələrdən birini seçərək sübut sənədlərini aça bilərsən.
+    Hər sənəd kliklədikcə bu qutuda mistik “arxiv görüntüsü” kimi görünəcək.
+  </p>
+
+  <!-- Sübut düymələri -->
+  <div class="evidence-grid">
+    <button class="evidence-btn" data-doc="doc-overview">
+      <span class="index">01</span> Hadisə xülasəsi və qəzet xəbəri
+    </button>
+    <button class="evidence-btn" data-doc="doc-chat">
+      <span class="index">02</span> Mərhumun yazışmaları (Whatsapp)
+    </button>
+    <button class="evidence-btn" data-doc="doc-interview">
+      <span class="index">03</span> Məşhur müğənni ilə reportaj
+    </button>
+    <button class="evidence-btn" data-doc="doc-bank">
+      <span class="index">04</span> Şübhəlilərin bank çıxarışları
+    </button>
+    <button class="evidence-btn" data-doc="doc-calls">
+      <span class="index">05</span> Telefon danışıqları siyahısı
+    </button>
+    <button class="evidence-btn" data-doc="doc-death">
+      <span class="index">06</span> Ölüm haqqında rəsmi sənəd
+    </button>
+    <button class="evidence-btn" data-doc="doc-puzzle">
+      <span class="index">07</span> Söz tapmaca – gizli ipucu
+    </button>
+    <button class="evidence-btn" data-doc="doc-statement-ferit">
+      <span class="index">08</span> Şübhəli ifadəsi – Ferit Akyüz
+    </button>
+    <button class="evidence-btn" data-doc="doc-statement-cenk">
+      <span class="index">09</span> Şübhəli ifadəsi – Cenk Uzun
+    </button>
+    <button class="evidence-btn" data-doc="doc-statement-murat">
+      <span class="index">10</span> Şübhəli ifadəsi – Murat Gezin
+    </button>
+    <button class="evidence-btn" data-doc="doc-statement-melek">
+      <span class="index">11</span> Şübhəli ifadəsi – Melek Şahin
+    </button>
+    <button class="evidence-btn" data-doc="doc-statement-muhammed">
+      <span class="index">12</span> Şübhəli ifadəsi – Muhammed Bilgin
+    </button>
+    <button class="evidence-btn" data-doc="doc-statement-emrah">
+      <span class="index">13</span> Şübhəli ifadəsi – Emrah Bağcılar
+    </button>
+    <button class="evidence-btn" data-doc="doc-statement-demet">
+      <span class="index">14</span> Şübhəli ifadəsi – Demet Güneş
+    </button>
+    <button class="evidence-btn" data-doc="doc-statement-haydar">
+      <span class="index">15</span> Şübhəli ifadəsi – Haydar Kurulmuş
+    </button>
+  </div>
+
+  <!-- Sənəd görüntüləyici -->
+  <div class="doc-viewer">
+    <div class="doc-placeholder" id="doc-placeholder">
+      Sübut arxivinə xoş gəldin. Üstdəki düymələrdən birini seç,
+      sonra isə biz hər sənəd üçün mətni tərcümə edib bu hissədə
+      “mistik arxiv sənədi” kimi göstərəcəyik.
     </div>
 
-    <!-- Sənəd görüntüləyici – indi boşdur, sənədləri tədricən dolduracağıq -->
-    <div class="doc-viewer">
-      <div class="doc-placeholder" id="doc-placeholder">
-        Sübut arxivinə xoş gəldin. Üstdəki düymələrdən birini seç,
-        sonra isə biz hər sənəd üçün mətni tərcümə edib bu hissədə “mistik arxiv sənədi”
-        kimi göstərəcəyik.
-      </div>
+    <div class="doc" id="doc-overview">
+      <div class="doc-title">01 · Hadisə xülasəsi və qəzet xəbəri</div>
+    </div>
 
-      <!-- 01: Hadisə xülasəsi və qəzet xəbəri -->
-      <div class="doc" id="doc-overview">
-        <div class="doc-title">01 · Hadisə xülasəsi və qəzet xəbəri</div>
-        <!-- Buraya sonra mətni yerləşdirəcəyik -->
-      </div>
+    <div class="doc" id="doc-chat">
+      <div class="doc-title">02 · Mərhumun yazışmaları</div>
+    </div>
 
-      <!-- 02: Yazışmalar -->
-      <div class="doc" id="doc-chat">
-        <div class="doc-title">02 · Mərhumun yazışmaları</div>
-      </div>
+    <div class="doc" id="doc-interview">
+      <div class="doc-title">03 · Xüsusi reportaj</div>
+    </div>
 
-      <!-- 03: Reportaj -->
-      <div class="doc" id="doc-interview">
-        <div class="doc-title">03 · Xüsusi reportaj</div>
-      </div>
+    <div class="doc" id="doc-bank">
+      <div class="doc-title">04 · Bank sənədləri</div>
+    </div>
 
-      <!-- 04: Bank çıxarışları -->
-      <div class="doc" id="doc-bank">
-        <div class="doc-title">04 · Bank sənədləri</div>
-      </div>
+    <div class="doc" id="doc-calls">
+      <div class="doc-title">05 · Telefon danışıqları</div>
+    </div>
 
-      <!-- 05: Telefon danışıqları -->
-      <div class="doc" id="doc-calls">
-        <div class="doc-title">05 · Telefon danışıqları</div>
-      </div>
+    <div class="doc" id="doc-death">
+      <div class="doc-title">06 · Ölüm haqqında rəsmi sənəd</div>
+    </div>
 
-      <!-- 06: Ölüm sənədi -->
-      <div class="doc" id="doc-death">
-        <div class="doc-title">06 · Ölüm haqqında rəsmi sənəd</div>
-      </div>
+    <div class="doc" id="doc-puzzle">
+      <div class="doc-title">07 · Söz tapmaca ipucusu</div>
+    </div>
 
-      <!-- 07: Tapmaca -->
-      <div class="doc" id="doc-puzzle">
-        <div class="doc-title">07 · Söz tapmaca ipucusu</div>
-      </div>
+    <div class="doc" id="doc-statement-ferit">
+      <div class="doc-title">08 · Şübhəli ifadəsi – Ferit Akyüz</div>
+    </div>
 
-      <!-- 08–15: İfadələr -->
-      <div class="doc" id="doc-statement-ferit">
-        <div class="doc-title">08 · Şübhəli ifadəsi – Ferit Akyüz</div>
-      </div>
+    <div class="doc" id="doc-statement-cenk">
+      <div class="doc-title">09 · Şübhəli ifadəsi – Cenk Uzun</div>
+    </div>
 
-      <div class="doc" id="doc-statement-cenk">
-        <div class="doc-title">09 · Şübhəli ifadəsi – Cenk Uzun</div>
-      </div>
+    <div class="doc" id="doc-statement-murat">
+      <div class="doc-title">10 · Şübhəli ifadəsi – Murat Gezin</div>
+    </div>
 
-      <div class="doc" id="doc-statement-murat">
-        <div class="doc-title">10 · Şübhəli ifadəsi – Murat Gezin</div>
-      </div>
+    <div class="doc" id="doc-statement-melek">
+      <div class="doc-title">11 · Şübhəli ifadəsi – Melek Şahin</div>
+    </div>
 
-      <div class="doc" id="doc-statement-melek">
-        <div class="doc-title">11 · Şübhəli ifadəsi – Melek Şahin</div>
-      </div>
+    <div class="doc" id="doc-statement-muhammed">
+      <div class="doc-title">12 · Şübhəli ifadəsi – Muhammed Bilgin</div>
+    </div>
 
-      <div class="doc" id="doc-statement-muhammed">
-        <div class="doc-title">12 · Şübhəli ifadəsi – Muhammed Bilgin</div>
-      </div>
+    <div class="doc" id="doc-statement-emrah">
+      <div class="doc-title">13 · Şübhəli ifadəsi – Emrah Bağcılar</div>
+    </div>
 
-      <div class="doc" id="doc-statement-emrah">
-        <div class="doc-title">13 · Şübhəli ifadəsi – Emrah Bağcılar</div>
-      </div>
+    <div class="doc" id="doc-statement-demet">
+      <div class="doc-title">14 · Şübhəli ifadəsi – Demet Güneş</div>
+    </div>
 
-      <div class="doc" id="doc-statement-demet">
-        <div class="doc-title">14 · Şübhəli ifadəsi – Demet Güneş</div>
-      </div>
-
-      <div class="doc" id="doc-statement-haydar">
-        <div class="doc-title">15 · Şübhəli ifadəsi – Haydar Kurulmuş</div>
-      </div>
+    <div class="doc" id="doc-statement-haydar">
+      <div class="doc-title">15 · Şübhəli ifadəsi – Haydar Kurulmuş</div>
     </div>
   </div>
+</div>
+
 
   <script>
     // Düymələri klikləyəndə uyğun sənədi açmaq üçün kiçik script
