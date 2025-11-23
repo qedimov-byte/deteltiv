@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yeni Səhifə · Hüquq nədir?</title>
+  <style>
+    :root {
+      --bg: #0b1536;
+      --bg-card: #101b46;
+      --text-main: #f9fafb;
+      --border: #273260;
+      --accent1: #f4c15c;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      font-family: Arial, sans-serif;
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    /* Logo bölməsi */
+    .logo-container {
+      width: 100%;
+      padding-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-container img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 14px rgba(244, 193, 92, 0.85));
+    }
+
+    /* Kitab qapağı fon elementi */
+    .cover-bg {
+      width: 300px;
+      height: 450px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--accent1);
+      border-radius: 18px;
+      margin-top: 40px;
+      backdrop-filter: blur(6px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 25px rgba(244, 193, 92, 0.25);
+    }
+
+    /* Card — içi boş */
+    .empty-card {
+      width: 80%;
+      max-width: 600px;
+      height: 200px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-container">
+    <img src="logo.png" alt="Hüquq nədir? Logo" />
+  </div>
+
+  <div class="cover-bg">
+    <!-- Buraya kitab qapağı yerləşdirilə bilər -->
+  </div>
+
+  <div class="empty-card">
+    <!-- İçi boş card -->
+  </div>
+
+</body>
+</html>
